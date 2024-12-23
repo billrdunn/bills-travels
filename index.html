@@ -2,18 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bill's Pics</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            overflow-x: hidden;
         }
         h1 {
             text-align: center;
@@ -22,18 +18,17 @@
         }
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-            gap: 15px;
-            padding: 10px;
-            width: 100%;
-            max-width: calc(100% - 20px);
-            margin: 0 auto;
+            grid-template-columns: 1
+            gap: 25px; 
+            padding: 25px; 
+            max-width: 100%; 
         }
         .grid-item {
             background: white;
             border: 1px solid #ddd;
             border-radius: 8px;
             overflow: hidden;
+            margin-bottom: 30px; 
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .grid-item img {
@@ -52,12 +47,12 @@
 <body>
     <div class="grid-container">
         <div class="grid-item">
-            <img src="images/IMG-20241216-WA0034.jpg" alt="Travel photo 3">
-            <div class="caption">15/12/24 Christmas at Mercia House</div>
-        </div>
-        <div class="grid-item">
             <img src="images/PXL_20241222_144538486.jpg" alt="Travel photo 2">
             <div class="caption">22/12/24 Christmas at Shop Farm</div>
+        </div>
+        <div class="grid-item">
+            <img src="images/IMG-20241216-WA0034.jpg" alt="Travel photo 3">
+            <div class="caption">15/12/24 Christmas at Mercia House</div>
         </div>
     </div>
 </body>
